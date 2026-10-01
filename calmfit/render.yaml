@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: calm-fit
+    runtime: node
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: DATA_DIR
+        value: data
+      - key: CALMFIT_ACCESS_TOKEN
+        sync: false
+      - key: CALMFIT_DEVICE_TOKEN
+        sync: false
+      - key: CALMFIT_DATA_ENCRYPTION_KEY
+        sync: false

@@ -1,0 +1,6 @@
+{
+  "name": "ASD Band Dashboard",
+  "description": "XIAO ESP32-S3 Wi-Fi real-time telemetry, heart rate (MAX30102), and GY-61 motion monitoring dashboard for ASD sensory overload detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
